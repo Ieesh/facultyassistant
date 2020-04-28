@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="assistant.minor2.faculty_assistant">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="assistant.minor2.faculty_assistant.main.AppBase">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.profile.ProfileActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.profile.FacultyRegistration"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.profile.ProfileActivity" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.CR_DETAILS.NoteCreate"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.CR_DETAILS.NoteActivity" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.findroom.RoomActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.components.ResultActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.components.CgpaActivity" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.components.CgpaActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.CR_DETAILS.NoteActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.schedule.Scheduler"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.schedule.CreateScheduleActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.schedule.Scheduler" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.components.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity
+            android:name="assistant.minor2.faculty_assistant.main.components.About"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase" />
+        <activity android:name="assistant.minor2.faculty_assistant.main.profile.EditFacultyActivity"
+            android:parentActivityName="assistant.minor2.faculty_assistant.main.AppBase"/>
+    </application>
+
+</manifest>
